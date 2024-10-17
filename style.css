@@ -23,6 +23,10 @@
     height: 600px;
 }
 
+.casdast {
+    width: 100px;
+}
+
 input::placeholder {
     color: #fbffeace; /* Cor do texto do placeholder */
     opacity: 1; /* Opacidade do placeholder */
