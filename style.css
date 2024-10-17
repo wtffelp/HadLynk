@@ -30,8 +30,9 @@ input::placeholder {
     opacity: 1; /* Opacidade do placeholder */
 }
 
-#cadast {
-    width: 57%;
+#cadastro {
+    width: 0 auto;
+    display: block;
 }
 
 #username, #email, #password {
@@ -79,7 +80,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: var(--cor1);
+    background: linear-gradient(var(--cor1) 25%, var(--cor5) 91%);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -90,14 +91,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
+    height: 0 auto;
+    width: 0 auto;
     background-color: #fbffea;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.main {
+main {
     display: flex;
     justify-content: center;
 }
@@ -186,4 +187,33 @@ button:hover {
 
 .social-login button i {
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(var(--cor1) 25%, var(--cor5) 91%);;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        transition: 0.3s;
+    }
+
+    #cadastro {
+        width: 77%;
+    }
+    
+    #username, #email, #password {
+        background-color: transparent;
+        border-color: var(--Fonts);
+        padding: 5px;
+        width: auto;
+        color: var(--Fonts);
+        border: none;
+    }
+
 }
