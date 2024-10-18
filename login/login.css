@@ -256,6 +256,7 @@ body {
      display: flex;
      gap: 20px;
      justify-content: space-between;
+     width: 100%;
   }
 
   .social-buttons button {
