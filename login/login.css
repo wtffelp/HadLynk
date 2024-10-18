@@ -22,7 +22,7 @@
     align-items: center;
     margin-top: -150px;
     margin-bottom: -150px;
-    height: 600px;
+    height: 450px;
 }
 
 input::placeholder {
@@ -254,7 +254,6 @@ body {
   .social-buttons {
     margin-top: 30px;
      display: flex;
-     flex-direction: column;
      gap: 20px;
      justify-content: space-between;
   }
@@ -267,6 +266,8 @@ body {
   .form-check-label{
     color: #10894e;
   }
+
+
 
 
   @media screen and (max-width: 768px) {
@@ -282,6 +283,8 @@ body {
         background-attachment: fixed; 
         transition: 0.3s;
     }
+
+
 
     #cadastro {
         width: 77%;
