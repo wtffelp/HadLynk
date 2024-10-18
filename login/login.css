@@ -16,8 +16,6 @@
     --Fonts: #fbffea;
 }
 
-/*
-
 .logo {
     display: flex;
     justify-content: center;
@@ -28,8 +26,8 @@
 }
 
 input::placeholder {
-    color: #fbffeace;
-    opacity:
+    color: #001b0e;
+    opacity: 62%;
 }
 
 #cadastro {
@@ -195,37 +193,6 @@ button:hover {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    body{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background: linear-gradient(var(--cor1) 25%, var(--cor5) 91%);;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        transition: 0.3s;
-    }
-
-    #cadastro {
-        width: 77%;
-    }
-    
-    #username, #email, #password {
-        background-color: transparent;
-        border-color: var(--Fonts);
-        padding: 5px;
-        width: auto;
-        color: var(--Fonts);
-        border: none;
-    }
-
-}
-*/
-
-
 body {
     background-color: #198754;
     display: flex;
@@ -287,10 +254,46 @@ body {
   .social-buttons {
     margin-top: 30px;
      display: flex;
+     flex-direction: column;
+     gap: 20px;
      justify-content: space-between;
   }
 
   .social-buttons button {
-    width: 45%;
-    margin: 0 10px;
+    width: 100%;
+    margin: 0 0;
   }
+
+  .form-check-label{
+    color: #10894e;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(var(--cor1) 25%, var(--cor5) 91%);;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        transition: 0.3s;
+    }
+
+    #cadastro {
+        width: 77%;
+    }
+    
+    #username, #email, #password {
+        background-color: transparent;
+        border-color: var(--Fonts);
+        padding: 5px;
+        width: auto;
+        color: var(--Fonts);
+        border: none;
+    }
+
+}
