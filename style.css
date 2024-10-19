@@ -27,14 +27,7 @@ body {
     align-items: center;
     height: 100vh;
 
-    /* Combina o gradiente e a imagem de fundo */
-    background: linear-gradient(
-        rgba(0, 32, 17, 0.5), /* Cor verde escuro com opacidade */
-        rgba(5, 89, 48, 0.5) /* Verde com opacidade */
-    ),
-    url('/imgs/wallhaven-429mjm_1920x1080.png') no-repeat center center/cover;
-
-    background-blend-mode: overlay; /* Mantém a imagem com o gradiente sobreposto */
+    
 }
 
 .container {
