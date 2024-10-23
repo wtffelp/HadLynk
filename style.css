@@ -69,12 +69,12 @@ button {
 }
 
 .btn-login {
-    background-color: var(--Fonts); /* Verde escuro */
+    background-color: white; /* Verde escuro */
     color: var(--cor4);
 }
 
 .btn-cadastro {
-    background-color: var(--Fonts); /* Verde escuro */
+    background-color: white; /* Verde escuro */
     color: var(--cor4);
 }
 

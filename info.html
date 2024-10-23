@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conta</title>
+  <link rel="icon" type="image/png" href="imagens/logo-weiva.png">
+  <link rel="stylesheet" href="info.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <header>
+       <div class="user-name">
+        <p class="user-phot"><i class="fa-solid fa-circle-user"></i></p> <p><strong>Olá,</strong> <span id="userName"></span></p>
+       </div>
+       <div class="logoff">
+        <button id="logoutButton" class="fa-solid fa-right-to-bracket"></i></button>
+       </div>
+   </header>
+
+   <div class="dados-container">
+    <div class="dados">
+      <div class="barra">
+        <p><span class="span"><i class="fa-solid fa-location-dot"></i> </span><strong>Região: </strong><span id="userRegion"></span></p> 
+      </div>
+
+      <div class="barra">
+        <p><span class="span"><i class="fa-solid fa-envelope"></i> </span><strong>Email: </strong><span id="userEmail"></span></p>
+      </div>
+  
+      <div class="barra">
+        <a href="chat/chat.html"><p><span class="span"><i class="fa-solid fa-comments"></i> </span><a href="chat/chat.html"><strong>Denuncias</strong></a></p>
+      </a>
+      </div>
+
+      <div class="barra">
+        <a href="cart.html"><p><span class="span"><i class="fa-solid fa-cart-shopping"></i> </span><a href="cart.html"><strong>Carrinho</strong></a></p>
+      </a>
+      </div>
+
+    </div>
+  </div>
+  
+  <script>
+    window.onload = function () {
+      const isLoggedIn = localStorage.getItem('isLoggedIn');
+      if (isLoggedIn !== 'true') {
+        window.location.href = 'cadastro.html'; 
+      } else {
+        document.getElementById('userName').textContent = localStorage.getItem('userName');
+        document.getElementById('userEmail').textContent = localStorage.getItem('userEmail');
+        document.getElementById('userRegion').textContent = localStorage.getItem('userCity');
+      }
+    };
+
+    // Logout
+    document.getElementById('logoutButton').addEventListener('click', function () {
+      localStorage.removeItem('isLoggedIn');
+      localStorage.removeItem('userName'); 
+      localStorage.removeItem('userEmail');
+      localStorage.removeItem('userCity'); 
+      window.location.href = 'index.html'; 
+    });
+  </script>
+</body>
+</html>
