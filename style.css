@@ -69,13 +69,13 @@ button {
 }
 
 .btn-login {
-    background-color: #006400; /* Verde escuro */
-    color: white;
+    background-color: var(--Fonts); /* Verde escuro */
+    color: var(--cor4);
 }
 
 .btn-cadastro {
-    background-color: #32CD32; /* Verde claro */
-    color: white;
+    background-color: var(--Fonts); /* Verde escuro */
+    color: var(--cor4);
 }
 
 .btn-google {

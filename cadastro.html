@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HadLynk - Cadastrar</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="logo">
+        <img id="cadastro" src="imgs_cadas/cadastro-removebg-preview.png" alt="cadastro">
+    </div>
+
+    <main>
+        <div class="container">
+            <form action="home.html">
+                <div class="user">
+                    <span><i class="fa-regular fa-user"></i></span>
+                    <input type="text" id="username" name="username" placeholder="Nome de Usuário" required><br><br>
+                </div>
+
+                <div class="regiao">
+                    <label for="cidade" class="form-label">Região</label>
+                    <select name="cidade" id="cidade" required>
+                      <option value="selecione" disabled selected>Selecione sua região</option>
+                      <option value="Tauá">Tauá - CE</option>
+                    </select>
+                  </div>
+        
+                <div class="user">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                </div>
+        
+                <div class="user">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="password" name="password" placeholder="Senha" required><br><br>
+                </div>
+        
+                <div class="btn">
+                    <a href="home.html"><input id="button" type="submit" value="Cadastrar"></a>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <div class="divider">
+        <hr class="left">
+        <span>OU</span>
+        <hr class="right">
+    </div>
+    
+    <div class="social-login">
+        <button class="facebook"><i class="fab fa-facebook-f"></i> Continuar com Facebook</button>
+        <button class="google"><i class="fab fa-google"></i> Continuar com Google</button>
+    </div>
+
+    <script>
+    </script>
+    
+</body>
+</html>
