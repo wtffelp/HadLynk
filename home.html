@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>had Lynk</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="sobre/sobre.html">Sobre</a></li>
+                <li><a href="contato/contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="logo"><img src="imgs/hadlynk-logo.png"></div>
+        <div class="user-btn">
+            <button> <a href="info.html"><i class="fa-solid fa-circle-user"></i></a></button>
+        </div>
+    </header>
+
+    <div class="select-container">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <select id="localizacao" name="localizacao">
+          <option value="selecione" disabled selected><i class="fa-solid fa-location-dot"></i> Selecione sua localização</option>
+          <option value="sao-paulo"><i class="fa-solid fa-location-dot"></i> Tauá - CE</option>
+        </select>
+      </div>
+    
+      <footer>
+          <div class="logo2">
+              <img src="imgs/hadlynk-2.png"></div>
+             <div class="email">
+                 <p>hadlynk.sa@gmail.com</p>
+             </div>
+          </footer>
+
+</body>
+<script>
+    document.getElementById("hamburger").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+  
+    if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        overlay.style.display = "none";
+    } else {
+        menu.classList.add("open");
+        overlay.style.display = "block";
+    }
+  });
+  
+  document.getElementById("overlay").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+    menu.classList.remove("open");
+    overlay.style.display = "none";
+  });
+</script>
+</html>

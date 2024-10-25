@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+  }
+  
+  header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    background-color: #09502d;
+    padding: 15px;
+    padding-bottom: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+  }
+
+
+/* pagina dos dados pra facilitar (mesma estilização)*/
+
+.user-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+   }
+   
+   .user-phot {
+       font-size: 35px;
+   }
+   
+   #logoutButton {
+       padding: 5px;
+       border: none;
+       background-color: transparent;
+       color: rgb(255, 255, 255);
+       font-size: 20px;
+   }
+  
+   .dados-container {
+     display: flex;
+     align-items: center;
+     justify-content: center ;
+     flex-direction: column;
+     margin-top: 100px;
+     height: 300px;
+     background-color: #c3c3c3;
+     border-radius: 10px;
+   }
+  
+   .dados {
+     width: 100%;
+     align-items: center;
+     justify-content: center ;
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+   }
+   
+   .barra {
+     background-color: white;
+     width: 100% !important;
+     padding: 15px;
+     border-radius: 10px;
+     font-size: 20px;
+     margin: 5px;
+   }
+  
+   .barra .span {
+     color: #09502d;
+   }
+  
+   .barra a {
+     text-decoration: none;
+     color: #000;
+   }
