@@ -17,6 +17,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      background-repeat: no-repeat;
+      background-size: cover;
       gap: 10px;
       min-height: 100dvh;
     }
@@ -51,7 +53,7 @@
       justify-content: center;
 
     }
-
+    
     .mb button {
       width: 100%;
       border: none;
@@ -68,6 +70,19 @@
       opacity: 1;
       font-size: 16.5px;
     }
+
+    @media screen and (max-width: 768px) {
+      img {
+        max-width: 350px; /* Reduz o tamanho máximo para telas menores */
+      }
+    }
+
+      /* Quando a tela for menor que 480px */
+    @media screen and (max-width: 480px) {
+      img {
+        max-width: 200px; /* Reduz o tamanho máximo ainda mais */
+      }
+    }
     
   </style>
 </head>
@@ -78,7 +93,7 @@
   </div>
   <h3>Junte-se a nós!</h3>
 
-  <div class="col col-md-6 d-flex align-items-center justify-content-center mb-3">
+  <div class="col col-md-6 d-flex align-items-center justify-content-center mb-3" id="clasdoform">
     <form class="bg-light w-100 p-4 rounded-4" id="loginForm">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
