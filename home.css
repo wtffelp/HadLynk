@@ -154,3 +154,8 @@ footer {
 .logo2 img {
   width: 150px;
 }
+
+#map { 
+  height: 400px;
+  width: 100%;
+}

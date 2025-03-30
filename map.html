@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mapa com Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
+    <style>
+      #map { height: 400px; width: 100%; }
+    </style>
+  </head>
+  <body>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+    <script>
+      // Inicializa o mapa centrado em São Paulo
+      var map = L.map('map').setView([-23.55052, -46.633308], 12);
+      
+      // Adiciona os tiles do OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      
+      // Adiciona um marcador com popup
+      L.marker([-23.55052, -46.633308]).addTo(map)
+        .bindPopup('Local Exemplo')
+        .openPopup();
+    </script>
+  </body>
+</html>
